@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import homeimg2 from "./assets/homeimg2.png";
 import { db, addDoc, collection } from "./firebaseConfig";
+import download from './assets/download.png';
 
 function Page1() {
   const [flag, setFlag] = useState(false);
@@ -73,9 +74,9 @@ function Page1() {
         <div className="w-full max-w-5xl flex flex-col sm:flex-row items-center justify-between bg-black p-6 rounded-lg shadow-md">
           <div className="flex-shrink-0 mb-4 sm:mb-0 sm:mr-6">
             <img
-              src={homeimg2}
+              src={download}
               alt="image1"
-              className="w-full h-auto rounded-md shadow"
+              className="w-[500px] h-[450px] rounded-md shadow object-contain"
             />
           </div>
 

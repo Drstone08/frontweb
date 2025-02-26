@@ -28,7 +28,7 @@ function Page3() {
       const data = { roll, team, name, score, date: timestamp };
 
       try {
-        await addDoc(collection(db, "quiz_results"), data);
+        await addDoc(collection(db, "teamDetails"), data);
         console.log("Data saved successfully");
         navigate("/page4", { state: { roll, team, name, score, date: timestamp } });
       } catch (error) {
@@ -84,7 +84,7 @@ function Page3() {
             <img
               src={homeimg2}
               alt="image1"
-              className="w-full h-auto rounded-md shadow"
+              className="w-full h-auto rounded-md shadow object-contain"
             />
           </div>
 

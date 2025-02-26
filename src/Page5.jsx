@@ -84,7 +84,7 @@ function Page5() {
             <img
               src={homeimg2}
               alt="image1"
-              className="w-full h-auto rounded-md shadow"
+              className="w-full h-auto rounded-md shadow object-contain"
             />
           </div>
 

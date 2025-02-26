@@ -35,7 +35,7 @@ function Home() {
           <h1 className="text-3xl font-bold text-white mb-4 font-mono">Webhunt</h1>
           <img src={homeimg} alt="Home" className="rounded-lg w-full max-w-[300px] shadow-lg" />
           {/* Instructions */}
-          <div className="bg-gray-800 p-4 rounded-lg mt-4 text-sm text-gray-300 w-full text-center">
+          <div className="bg-gray-800 p-4 rounded-lg mt-1 text-sm text-gray-300 w-full text-center">
             <h2 className="text-lg font-semibold text-white">Instructions</h2>
             <ul className="list-inside text-left space-y-2">
               <li>✔ Fill team details carefully, cannot be changed.</li>
@@ -59,7 +59,7 @@ function Home() {
           </div>
 
           {/* Form */}
-          <div className="w-full max-w-md p-4 bg-gray-800 rounded-lg">
+          <div className="w-full max-w-md p-4 bg-gray-800 rounded-lg mt-1.5">
             <h2 className="text-xl font-bold text-center text-white mb-4">Enter Team Details</h2>
             <input
               type="text"
