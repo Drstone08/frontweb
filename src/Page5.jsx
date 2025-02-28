@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { db, collection, addDoc } from "./firebaseConfig"; 
-import homeimg2 from "./assets/homeimg2.png";
+import homeimg2 from "./assets/ques5.jpg";
 
 function Page5() {
   const location = useLocation();
@@ -12,7 +12,7 @@ function Page5() {
   const [flag, setFlag] = useState(false);
 
   const handleSubmit = async () => {
-    if (ans2.toUpperCase() === "AA") {
+    if (ans2.trim().toUpperCase() === "TRUMAN") {
       const now = new Date();
       let hours = now.getHours();
       const minutes = now.getMinutes().toString().padStart(2, "0");
@@ -28,7 +28,7 @@ function Page5() {
       const data = { roll, team, name, score, date: timestamp };
 
       try {
-        await addDoc(collection(db, "quiz_results"), data);
+        await addDoc(collection(db, "teamDetails"), data);
         console.log("Data saved successfully");
         navigate("/page6", { state: { roll, team, name, score, date: timestamp } });
       } catch (error) {
@@ -84,7 +84,7 @@ function Page5() {
             <img
               src={homeimg2}
               alt="image1"
-              className="w-full h-auto rounded-md shadow object-contain"
+              className="w-[500px] h-[450px] rounded-md shadow object-contain"
             />
           </div>
 

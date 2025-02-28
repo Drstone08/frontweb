@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import homeimg2 from "./assets/homeimg2.png";
 import { db, addDoc, collection } from "./firebaseConfig";
-import download from './assets/download.png';
+import download from './assets/ques1.jpg';
 
 function Page1() {
   const [flag, setFlag] = useState(false);
@@ -15,11 +14,11 @@ function Page1() {
 
   const getCurrentTime = () => {
     const now = new Date();
-    return now.toLocaleTimeString(); 
+    return now.toLocaleTimeString();   
   };
 
   const handleSubmit = async () => {
-    if (ans1.toUpperCase() === "AA") {
+    if (ans1.trim().toUpperCase() === "TIKTOK" || ans1.trim().toUpperCase() === "TIK TOK") {
       try {
         const date = getCurrentTime();
         score = 10;

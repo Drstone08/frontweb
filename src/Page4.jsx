@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { db, collection, addDoc } from "./firebaseConfig"; 
-import homeimg2 from "./assets/homeimg2.png";
+import homeimg2 from "./assets/ques4.jpg";
 
 function Page4() {
   const location = useLocation();
@@ -12,7 +12,7 @@ function Page4() {
   const [flag, setFlag] = useState(false);
 
   const handleSubmit = async () => {
-    if (ans2.toUpperCase() === "AA") {
+    if (ans2.trim().toUpperCase() === "SKOLL AND HATI" || ans2.trim().toUpperCase() === "HATI AND SKOLL" || ans2.trim().toUpperCase() === "HATIANDSKOLL" || ans2.trim().toUpperCase() === "SKOLLANDHATI") {
       const now = new Date();
       let hours = now.getHours();
       const minutes = now.getMinutes().toString().padStart(2, "0");
@@ -84,7 +84,7 @@ function Page4() {
             <img
               src={homeimg2}
               alt="image1"
-              className="w-full h-auto rounded-md shadow object-contain"
+              className="w-[500px] h-[450px] rounded-md shadow object-contain"
             />
           </div>
 
