@@ -30,7 +30,7 @@ function Page5() {
       try {
         await addDoc(collection(db, "quiz_results"), data);
         console.log("Data saved successfully");
-        navigate("/final",{ state: { roll, team, name, score, date: timestamp } });
+        navigate("/page6", { state: { roll, team, name, score, date: timestamp } });
       } catch (error) {
         console.error("Error saving data:", error);
       }
