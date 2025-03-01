@@ -12,7 +12,7 @@ function Page5() {
   const [flag, setFlag] = useState(false);
 
   const handleSubmit = async () => {
-    if (ans2.trim().toUpperCase() === import.meta.env.QUES5) {
+    if (ans2.trim().toUpperCase() === import.meta.env.VITE_QUES5) {
       const now = new Date();
       let hours = now.getHours();
       const minutes = now.getMinutes().toString().padStart(2, "0");
