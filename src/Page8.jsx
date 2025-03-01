@@ -12,7 +12,7 @@ function Page8() {
   const [flag, setFlag] = useState(false);
 
   const handleSubmit = async () => {
-    if (ans2.trim().toUpperCase() === "IIT MADRAS" || ans2.trim().toUpperCase() === "IITMADRAS") {
+    if (ans2.trim().toUpperCase() === import.meta.env.QUES8 ) {
       const now = new Date();
       let hours = now.getHours();
       const minutes = now.getMinutes().toString().padStart(2, "0");

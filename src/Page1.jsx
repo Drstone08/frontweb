@@ -18,7 +18,7 @@ function Page1() {
   };
 
   const handleSubmit = async () => {
-    if (ans1.trim().toUpperCase() === "TIKTOK" || ans1.trim().toUpperCase() === "TIK TOK") {
+    if (ans1.trim().toUpperCase() === import.meta.env.QUES1) {
       try {
         const date = getCurrentTime();
         score = 10;

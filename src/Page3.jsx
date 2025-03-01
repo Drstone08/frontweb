@@ -12,7 +12,7 @@ function Page3() {
   const [flag, setFlag] = useState(false);
 
   const handleSubmit = async () => {
-    if (ans2.trim().toUpperCase() === "NARCOS" || ans2.trim().toUpperCase() === "NAR COS") {
+    if (ans2.trim().toUpperCase() === import.meta.env.QUES3) {
       const now = new Date();
       let hours = now.getHours();
       const minutes = now.getMinutes().toString().padStart(2, "0");
