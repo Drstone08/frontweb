@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 // Creating the root of the React app and rendering it inside the 'root' element
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/webhunt"> {/* Setting the base URL to '/webhunt' */}
+    <BrowserRouter basename="/frontweb"> {/* Setting the base URL to '/webhunt' */}
       <App />
     </BrowserRouter>
   </StrictMode>
